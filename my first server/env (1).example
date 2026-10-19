@@ -1,0 +1,21 @@
+# Copy this file to ".env" and fill in your own values.
+# Never commit the real .env file (add it to .gitignore).
+
+# --- Server ---
+PORT=4000
+# Browser origins allowed to call the API, comma-separated.
+# 3000 = Create React App, 5173 = Vite.
+CORS_ORIGIN=http://localhost:3000,http://localhost:5173
+
+# --- MySQL (phpMyAdmin / XAMPP defaults shown) ---
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=civix
+
+# --- Admin ---
+# The one password that unlocks POST /api/admin/login. Use a long, random value.
+ADMIN_PASSWORD=change-this-to-a-long-random-password
+# How long an admin token stays valid, in hours (default 8).
+ADMIN_TOKEN_TTL_HOURS=8
